@@ -1,7 +1,7 @@
-import React, {useSate, useCallback} from 'react';
+import React, {useState, useCallback} from 'react';
 
 const SearchBar = (props) => {
-    const [term, setTerm] = useSate('');
+    const [term, setTerm] = useState('');
 
     const handleTermChange = useCallback(
         (event) => {

@@ -48,7 +48,7 @@ const App = () => {
       <div className='app'>
         <SearchBar onSearch={search} />
         <div className='appPlaylist'>
-          <searchResults searchResults={searchResults} onAdd={addTrack} />
+          <SearchResults searchResults={searchResults} onAdd={addTrack} />
           <Playlist 
             playlistName={playlistName}
             playlistTracks={playlistTracks}

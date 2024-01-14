@@ -11,7 +11,7 @@ const Playlist = (props) => {
     
     return (
         <div className='playlist'>
-            <input onChange={handleNameChange} defaultValue={'New Playlist'} />
+            <input onChange={handleNameChange} defaultValue={'New Playlist'} className='newPlaylist' />
             <Tracklist 
                 tracks={props.playlistTracks}
                 isRemoval={true}

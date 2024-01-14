@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import {useState, useCallback} from 'react';
+import '../styles/SearchBar.css'
 
 const SearchBar = (props) => {
     const [term, setTerm] = useState('');
@@ -15,7 +16,7 @@ const SearchBar = (props) => {
     
     return (
         <div className='searchBar'>
-            <input placeholder='Enter Song Title' onChange={handleTermChange} />
+            <input placeholder='Enter Song Title' onChange={handleTermChange} className='searchContainer' />
             <button className='searchButton' onClick={search}>Search</button>
         </div>
     );

@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import Track from "./Track";
+import '../styles/Tracklist.css'
 
 const Tracklist = (props) => {
     

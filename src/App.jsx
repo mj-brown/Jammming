@@ -3,9 +3,7 @@ import Playlist from './components/Playlist';
 import SearchBar from './components/SearchBar';
 import SearchResults from './components/SearchResults';
 import Spotify from './utilities/Spotify';
-
-
-import './App.css';
+import './styles/App.css';
 
 const App = () => {
   const [searchResults, setSearchResults] = useState([]);
@@ -44,9 +42,11 @@ const App = () => {
   }, [playlistName, playlistTracks]);
 
   return (
-    <div>
-      <h1>Ja<span className='highlight'>mmm</span>ing</h1>
-      <div className='app'>
+    <div className='app'>
+      <div className='header'>
+        <h1>Ja<span className='highlight'>mmm</span>ing</h1>
+      </div>
+      <div className='main'>
         <SearchBar onSearch={search} />
         <div className='appPlaylist'>
           <SearchResults searchResults={searchResults} onAdd={addTrack} />

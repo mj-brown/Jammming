@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import Track from "./Track";
 
 const Tracklist = (props) => {

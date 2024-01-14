@@ -1,11 +1,12 @@
-import React, { useCallback } from 'react';
+/* eslint-disable react/prop-types */
+import { useCallback } from 'react';
 import Tracklist from './Tracklist';
 
 const Playlist = (props) => {
     const handleNameChange = useCallback(
         (event) => {
             props.onNameChange(event.target.value);
-        }, [props.onNameChange]
+        }, [props]
     );
     
     return (

@@ -1,22 +1,23 @@
-import React, { useCallback } from 'react';
+/* eslint-disable react/prop-types */
+import { useCallback } from 'react';
 
 const Track = (props) => {
     const addTrack = useCallback(
-        (event) => {
+        () => {
             props.onAdd(props.track);
-        }, [props.onAdd, props.track]
+        }, [props]
     );
 
     const removeTrack = useCallback(
-        (event) => {
+        () => {
             props.onRemove(props.track);
-        }, [props.onRemove, props.track]
+        }, [props]
     );
 
     const renderAction = () => {
         if (props.isRemoval) {
             return (
-                <button className='trackAction' onclick={removeTrack}>-</button>
+                <button className='trackAction' onClick={removeTrack}>-</button>
             );
         }
         return (

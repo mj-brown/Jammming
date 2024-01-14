@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import Tracklist from "./Tracklist";
 
 const SearchResults = (props) => {
@@ -6,7 +6,7 @@ const SearchResults = (props) => {
         <div className="searchResults">
             <h2>Results</h2>
             <Tracklist 
-                tracks={props.SearchResults}
+                tracks={props.searchResults}
                 onAdd={props.onAdd} 
             />
         </div>

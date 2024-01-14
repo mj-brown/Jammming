@@ -1,7 +1,8 @@
-import React, {useState, useCallback} from 'react';
+import {useState, useCallback} from 'react';
 import Playlist from './components/Playlist';
 import SearchBar from './components/SearchBar';
 import SearchResults from './components/SearchResults';
+import Spotify from './utilities/Spotify';
 
 
 import './App.css';

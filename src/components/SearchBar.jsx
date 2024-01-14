@@ -1,4 +1,5 @@
-import React, {useState, useCallback} from 'react';
+/* eslint-disable react/prop-types */
+import {useState, useCallback} from 'react';
 
 const SearchBar = (props) => {
     const [term, setTerm] = useState('');
@@ -10,7 +11,7 @@ const SearchBar = (props) => {
     
     const search = useCallback(() => {
         props.onSearch(term);
-    }, [props.onSearch, term]);
+    }, [props, term]);
     
     return (
         <div className='searchBar'>
